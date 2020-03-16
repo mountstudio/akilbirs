@@ -2,12 +2,21 @@ body {
     font-family: "Roboto", sans-serif;
 }
 .bg-main {
-    background: url("../img/main.jpg") no-repeat  left bottom;
+    background: url("../img/cropped-slide001.jpg") no-repeat ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; ;
+    background-size: cover;
 
+}
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #00000080;
 }
 
 .accordion {
@@ -68,3 +77,26 @@ body {
     box-shadow: 7px 13px 30px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
 }
+.bg_footer {
+    background-image: url("../img/bg_footer_ak_ilbirs.png");
+}
+.advantages-img {
+    height: 7px;
+    margin-top: 17px;
+}
+.advantages .advantages-img:first-child {
+    margin-right: 5px;
+}
+.advantages .advantages-img{
+    margin-left: 5px;
+}
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+}
+
