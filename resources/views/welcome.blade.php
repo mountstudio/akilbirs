@@ -22,15 +22,18 @@
 <section class="bg-main position-relative">
     <div class="backdrop"></div>
     <div class="container position-relative py-3">
-        <div class="row logo">
-            <div class="col-12 col-lg-2">
+        <div class="row align-items-center logo">
+            <div class="col-12 col-lg-2 text-center">
                 <img src="{{ asset('img/logo.svg') }}" style="width: 150px; height: auto;" alt="">
             </div>
-            <div class="col-12 col-lg-6 d-flex">
-                <p class="text-white">Время в Китае: 21:40:40</p>
+            <div class="col-12 col-lg-3 text-center">
+                <p class="text-white pt-2 m-0">Время в Китае: 21:40:40</p>
+                <p class="text-white">Время в Стамбуле: 21:40:40</p>
+            </div>
+            <div class="col-12 col-lg-3 py-4 text-center">
                 <a class="border rounded-pill p-3 text-white" href="tel:+ 996 706 199 144">+ 996 706 199 144</a>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4 text-center">
                 <div class="dropdown">
                     <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -44,26 +47,61 @@
                     </div>
                 </div>
             </div>
+
         </div>
-        <div class="row min-vh-100 align-items-center">
-            <div class="col-12 col-lg-8 text-white">
-                <p class="h1 py-3">Грузоперевозки из Китая и Стамбула под ключ</p>
+        <div class="row min-vh-100 align-items-center py-3">
+            <div class="col-12 col-lg-12 text-white text-center">
+                <p class="h1 py-4">Грузоперевозки из Китая и Стамбула под ключ</p>
                 <a class="text-white p-3 " style="background: #17679A;border-radius: 15px;" href="">Заказать
                     обратный звонок</a>
-            </div>
-            <div class="col-12 col-lg-4 row justify-content-end">
-                <ul class="" style="list-style: none">
-                    <li class="py-4"><a href=""><img src="{{ asset('icons/wechat.svg') }}" alt="wechat"></a></li>
-                    <li class="py-4"><a href="https://www.instagram.com/akilbirs.kg/?hl=ru"><img
+{{--            </div>--}}
+{{--            <div class="col-12 col-lg-4 row justify-content-md-end d-inline-block">--}}
+                <ul class="list-inline py-3" style="list-style: none">
+                    <li class="list-inline-item py-4 px-2"><a href=""><img src="{{ asset('icons/wechat.svg') }}" alt="wechat"></a></li>
+                    <li class="list-inline-item py-4 px-2"><a href="https://www.instagram.com/akilbirs.kg/?hl=ru"><img
                                 src="{{ asset('icons/insta.png') }}" alt="insta"></a></li>
-                    <li class="py-4"><a href="https://t.me/996770199144"><img src="{{ asset('icons/telegram.png') }}"
+                    <li class="list-inline-item py-4 px-2"><a href="https://t.me/996770199144"><img src="{{ asset('icons/telegram.png') }}"
                                                                               alt="telegram"></a></li>
-                    <li class="py-4"><a href="https://api.whatsapp.com/send?phone=996770199144"><img
+                    <li class="list-inline-item py-4 px-2"><a href="https://api.whatsapp.com/send?phone=996770199144"><img
                                 src="{{ asset('icons/whatsapp.png') }}" alt="whatsapp"></a></li>
-                    <li class="py-4"><a href="https://www.facebook.com/tk.akilbirs/"><img
+                    <li class="list-inline-item py-4 px-2"><a href="https://www.facebook.com/tk.akilbirs/"><img
                                 src="{{ asset('icons/facebook.png') }}" alt="facebook"></a></li>
                 </ul>
             </div>
+        </div>
+        <div class="text-white">
+           <div class="row align-items-center">
+               <div class="col-12 col-lg-1 text-lg-right text-center pb-2 px-0">
+                   <img class="img-fluid text-lg-right" src="{{ asset('img/perevozka_gruzov.png') }}" alt="">
+               </div>
+               <div class="col-12 col-lg-2   text-center">
+                   <p class="">Перевозка сборных
+                       грузов от 1 кг</p>
+               </div>
+               <div class="col-12 col-lg-1 text-lg-right text-center  pb-2 px-0">
+                   <img class="img-fluid text-lg-right" src="{{ asset('img/sklad_v_guangou.png') }}" alt="">
+               </div>
+               <div class="col-12 col-lg-2  text-center">
+                   <p class="pt-2">Склад в
+                       Гуанчжоу</p>
+               </div>
+               <div class="col-12 col-lg-1 text-lg-right text-center  pb-2 px-0">
+                   <img class="img-fluid text-lg-right" src="{{ asset('img/express_dostavka.png') }}" alt="">
+               </div>
+               <div class="col-12 col-lg-2   text-center">
+                   <p class="">Экспресс доставка
+                       от 7 дней</p>
+               </div>
+               <div class="col-12 col-lg-1 text-lg-right text-center  pb-2 px-0">
+                   <img class="img-fluid text-lg-right" src="{{ asset('img/dostavka_do_dveri.png') }}" alt="">
+               </div>
+               <div class="col-12 col-lg-2   text-center">
+                   <p class="pt-2">Доставка
+                       до двери</p>
+               </div>
+
+           </div>
+{{--            <hr style="width: 868px;">--}}
         </div>
     </div>
 </section>
@@ -73,33 +111,33 @@
             <div class="col-12 advantages text-center">
                 <img src="{{ asset('img/track.png') }}" alt="">
                 <div class="row justify-content-center">
-                    <img class="img-fluid advantages-img" src="{{ asset('img/right_line.png') }}" alt="">
+                    <img class="img-fluid advantages-img d-none d-sm-block" src="{{ asset('img/right_line.png') }}" alt="">
                     <h2 class="text-dark">Наши преимущества</h2>
-                    <img class="img-fluid advantages-img" src="{{ asset('img/left_line.png') }}" alt="">
+                    <img class="img-fluid advantages-img d-none d-sm-block" src="{{ asset('img/left_line.png') }}" alt="">
                 </div>
             </div>
-            <div class="col-12 col-lg-3 text-center py-2">
+            <div class="col-12 col-lg-3 col-md-6 text-center py-2">
                 <div class="bg_advantages p-5">
                     <img src="{{ asset('img/delivery-truck.png') }}" alt="">
                     <hr>
                     <p style="min-height: 40px;">Скорость</p>
                 </div>
             </div>
-            <div class="col-12 col-lg-3 text-center py-2">
+            <div class="col-12 col-lg-3 col-md-6 text-center py-2">
                 <div class="bg_advantages p-5">
                     <img src="{{ asset('img/men-carrying-a-box.png') }}" alt="">
                     <hr>
                     <p style="min-height: 40px;">Без посредников</p>
                 </div>
             </div>
-            <div class="col-12 col-lg-3 text-center py-2">
+            <div class="col-12 col-lg-3 col-md-6 text-center py-2">
                 <div class="bg_advantages p-5">
                     <img src="{{ asset('img/package.png') }}" alt="">
                     <hr>
                     <p style="min-height: 40px;"> Сохранность грузов</p>
                 </div>
             </div>
-            <div class="col-12 col-lg-3 text-center py-2">
+            <div class="col-12 col-lg-3 col-md-6 text-center py-2">
                 <div class="bg_advantages p-5">
                     <img src="{{ asset('img/calendar.png') }}" alt="">
                     <hr>
@@ -115,11 +153,11 @@
 <section class="" style="background: #E5E5E5;">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-3 py-5 text-center">
+            <div class="col-12 col-lg-3 col-md-6 py-5 text-center">
                 <a href="https://texmart.kg/"><img class="img-fluid pt-2" src="{{ asset('img/logo2.png') }}"
                                                    alt=""></a>
             </div>
-            <div class="col-12 col-lg-3 py-5 text-center">
+            <div class="col-12 col-lg-3 col-md-6 py-5 text-center">
                 <a href=""><img class="img-fluid pt-2"
                                 src="{{ asset('img/final.png') }}" alt=""></a>
             </div>
@@ -205,12 +243,12 @@
                             склад №125</p>
                     </div>
                 </div>
-                <div class="col-12 col-lg-7 pt-5">
+                <div class="col-12 col-lg-7 col-md-6 pt-5">
                     <iframe
                         src="https://yandex.ru/map-widget/v1/?um=constructor%3Aab66f004e34297061650de4b5e4eae2f3ca8c1392477903ce2d5cc71771d86fc&amp;source=constructor"
                         width="100%" height="450" frameborder="0"></iframe>
                 </div>
-                <div class="col-12 col-lg-5 py-5">
+                <div class="col-12 col-lg-5 col-md-6 py-5">
                     <form>
                         <div class="row">
                             <div class="col">
