@@ -326,11 +326,11 @@
                     {{--                    <a class="text-white p-3 text-center" style="background: #063E62;border-radius: 15px;" href="">Заказать--}}
                     {{--                        обратный звонок</a>--}}
                     <div class="text-center py-4">
-                        <img class="px-1" src="{{ asset('icons/wechat.svg') }}" alt="">
-                        <img class="px-1" src="{{ asset('icons/insta.png') }}" alt="">
-                        <img class="px-1" src="{{ asset('icons/telegram.png') }}" alt="">
-                        <img class="px-1" src="{{ asset('icons/whatsapp.png') }}" alt="">
-                        <img class="px-1" src="{{ asset('icons/facebook.png') }}" alt="">
+                        <a href=""><img class="px-1" src="{{ asset('icons/wechat.svg') }}" alt=""></a>
+                        <a href="https://www.instagram.com/akilbirs.kg/?hl=ru"><img class="px-1" src="{{ asset('icons/insta.png') }}" alt=""></a>
+                        <a href="https://t.me/996770199144"><img class="px-1" src="{{ asset('icons/telegram.png') }}" alt=""></a>
+                        <a href="https://api.whatsapp.com/send?phone=996770199144"><img class="px-1" src="{{ asset('icons/whatsapp.png') }}" alt=""></a>
+                        <a href="https://www.facebook.com/tk.akilbirs/"><img class="px-1" src="{{ asset('icons/facebook.png') }}" alt=""></a>
                     </div>
                 </div>
                 {{--                <div class="col-11 row justify-content-end">--}}
