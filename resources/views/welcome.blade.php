@@ -54,15 +54,18 @@
                 <p class="h1 py-4">Грузоперевозки из Китая и Стамбула под ключ</p>
                 <a class="text-white p-3 " style="background: #17679A;border-radius: 15px;" href="">Заказать
                     обратный звонок</a>
-{{--            </div>--}}
-{{--            <div class="col-12 col-lg-4 row justify-content-md-end d-inline-block">--}}
+                {{--            </div>--}}
+                {{--            <div class="col-12 col-lg-4 row justify-content-md-end d-inline-block">--}}
                 <ul class="list-inline py-3" style="list-style: none">
-                    <li class="list-inline-item py-4 px-2"><a href=""><img src="{{ asset('icons/wechat.svg') }}" alt="wechat"></a></li>
+                    <li class="list-inline-item py-4 px-2"><a href=""><img src="{{ asset('icons/wechat.svg') }}"
+                                                                           alt="wechat"></a></li>
                     <li class="list-inline-item py-4 px-2"><a href="https://www.instagram.com/akilbirs.kg/?hl=ru"><img
                                 src="{{ asset('icons/insta.png') }}" alt="insta"></a></li>
-                    <li class="list-inline-item py-4 px-2"><a href="https://t.me/996770199144"><img src="{{ asset('icons/telegram.png') }}"
-                                                                              alt="telegram"></a></li>
-                    <li class="list-inline-item py-4 px-2"><a href="https://api.whatsapp.com/send?phone=996770199144"><img
+                    <li class="list-inline-item py-4 px-2"><a href="https://t.me/996770199144"><img
+                                src="{{ asset('icons/telegram.png') }}"
+                                alt="telegram"></a></li>
+                    <li class="list-inline-item py-4 px-2"><a
+                            href="https://api.whatsapp.com/send?phone=996770199144"><img
                                 src="{{ asset('icons/whatsapp.png') }}" alt="whatsapp"></a></li>
                     <li class="list-inline-item py-4 px-2"><a href="https://www.facebook.com/tk.akilbirs/"><img
                                 src="{{ asset('icons/facebook.png') }}" alt="facebook"></a></li>
@@ -70,38 +73,38 @@
             </div>
         </div>
         <div class="text-white">
-           <div class="row align-items-center">
-               <div class="col-12 col-lg-1 text-lg-right text-center pb-2 px-0">
-                   <img class="img-fluid text-lg-right" src="{{ asset('img/perevozka_gruzov.png') }}" alt="">
-               </div>
-               <div class="col-12 col-lg-2   text-center">
-                   <p class="">Перевозка сборных
-                       грузов от 1 кг</p>
-               </div>
-               <div class="col-12 col-lg-1 text-lg-right text-center  pb-2 px-0">
-                   <img class="img-fluid text-lg-right" src="{{ asset('img/sklad_v_guangou.png') }}" alt="">
-               </div>
-               <div class="col-12 col-lg-2  text-center">
-                   <p class="pt-2">Склад в
-                       Гуанчжоу</p>
-               </div>
-               <div class="col-12 col-lg-1 text-lg-right text-center  pb-2 px-0">
-                   <img class="img-fluid text-lg-right" src="{{ asset('img/express_dostavka.png') }}" alt="">
-               </div>
-               <div class="col-12 col-lg-2   text-center">
-                   <p class="">Экспресс доставка
-                       от 7 дней</p>
-               </div>
-               <div class="col-12 col-lg-1 text-lg-right text-center  pb-2 px-0">
-                   <img class="img-fluid text-lg-right" src="{{ asset('img/dostavka_do_dveri.png') }}" alt="">
-               </div>
-               <div class="col-12 col-lg-2   text-center">
-                   <p class="pt-2">Доставка
-                       до двери</p>
-               </div>
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-1 text-lg-right text-center pb-2 px-0">
+                    <img class="img-fluid text-lg-right" src="{{ asset('img/perevozka_gruzov.png') }}" alt="">
+                </div>
+                <div class="col-12 col-lg-2   text-center">
+                    <p class="">Перевозка сборных
+                        грузов от 1 кг</p>
+                </div>
+                <div class="col-12 col-lg-1 text-lg-right text-center  pb-2 px-0">
+                    <img class="img-fluid text-lg-right" src="{{ asset('img/sklad_v_guangou.png') }}" alt="">
+                </div>
+                <div class="col-12 col-lg-2  text-center">
+                    <p class="pt-2">Склад в
+                        Гуанчжоу</p>
+                </div>
+                <div class="col-12 col-lg-1 text-lg-right text-center  pb-2 px-0">
+                    <img class="img-fluid text-lg-right" src="{{ asset('img/express_dostavka.png') }}" alt="">
+                </div>
+                <div class="col-12 col-lg-2   text-center">
+                    <p class="">Экспресс доставка
+                        от 7 дней</p>
+                </div>
+                <div class="col-12 col-lg-1 text-lg-right text-center  pb-2 px-0">
+                    <img class="img-fluid text-lg-right" src="{{ asset('img/dostavka_do_dveri.png') }}" alt="">
+                </div>
+                <div class="col-12 col-lg-2   text-center">
+                    <p class="pt-2">Доставка
+                        до двери</p>
+                </div>
 
-           </div>
-{{--            <hr style="width: 868px;">--}}
+            </div>
+            {{--            <hr style="width: 868px;">--}}
         </div>
     </div>
 </section>
@@ -111,9 +114,11 @@
             <div class="col-12 advantages text-center">
                 <img src="{{ asset('img/track.png') }}" alt="">
                 <div class="row justify-content-center">
-                    <img class="img-fluid advantages-img d-none d-sm-block" src="{{ asset('img/right_line.png') }}" alt="">
+                    <img class="img-fluid advantages-img d-none d-sm-block" src="{{ asset('img/right_line.png') }}"
+                         alt="">
                     <h2 class="text-dark">Наши преимущества</h2>
-                    <img class="img-fluid advantages-img d-none d-sm-block" src="{{ asset('img/left_line.png') }}" alt="">
+                    <img class="img-fluid advantages-img d-none d-sm-block" src="{{ asset('img/left_line.png') }}"
+                         alt="">
                 </div>
             </div>
             <div class="col-12 col-lg-3 col-md-6 text-center py-2">
@@ -143,6 +148,53 @@
                     <hr>
                     <p style="min-height: 56px;margin-bottom: 0;">Работаем без выходных</p>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row text-white">
+            <div class="col-12 advantages text-center">
+                <img src="{{ asset('img/visa (3).png') }}" alt="">
+                <div class="row justify-content-center">
+                    <img class="img-fluid advantages-img d-none d-sm-block" src="{{ asset('img/right_line.png') }}"
+                         alt="">
+                    <h2 class="text-dark">Визовая помощь в Китай и Турцию</h2>
+                    <img class="img-fluid advantages-img d-none d-sm-block" src="{{ asset('img/left_line.png') }}"
+                         alt="">
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 text-center py-3">
+                <div class="bg_advantages p-5">
+                    <img src="{{ asset('img/team (1).png') }}" alt="">
+                    <hr>
+                    <p style="min-height: 50px;">Оформление групповых и индивидуальных виз</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 text-center py-3">
+                <div class="bg_advantages p-5">
+                    <img src="{{ asset('img/experience (2).png') }}" alt="">
+                    <hr>
+                    <p style="min-height: 50px;">Опыт работы более 20 лет</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 text-center py-3">
+                <div class="bg_advantages p-5">
+                    <img src="{{ asset('img/trip.png') }}" alt="">
+                    <hr>
+                    <p style="min-height: 50px;">Туры и поездки по всему миру</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-12 text-center text-dark pt-4" style="background: #E5E5E5;border-radius: 20px">
+                <p class="h5">Контактные данные визового консультанта</p>
+                <p>Адрес: Кыргызстан, г.Бишкек, ул.Шопокова (Ред Центр,5 этаж,516 кабинет) 121/1</p>
+                <a href="tel:+996509199144"><p class="text-dark">Телефонный номер: +996509199144</p></a>
+                <a href=""><img class="img-fluid px-2" src="{{ asset('icons/wechat.svg') }}" alt="wechat"></a>
+                <a href=""><img class="img-fluid px-2" src="{{ asset('icons/telegram.png') }}" alt="telegram"></a>
+                <a href="https://api.whatsapp.com/send?phone=996509199144"><img class="img-fluid px-2"
+                                                                                src="{{ asset('icons/whatsapp.png') }}"
+                                                                                alt="whatsapp" ></a>
             </div>
         </div>
     </div>
