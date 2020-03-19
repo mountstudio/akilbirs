@@ -14,10 +14,10 @@
             </div>
             <div class="col-15 col-lg-7 py-4 text-center d-md-flex d-block">
                 <div class="mx-2 my-5 my-md-0">
-                    <a class="border rounded-pill p-3 text-white" href="tel:+ 996 706 199 144">+ 996 706 199 144</a>
+                    <a class="border rounded-pill p-3 text-white" href="tel:+996706199144">+ 996 706 199 144</a>
                 </div>
                 <div class="mx-2 my-5 my-md-0">
-                    <a class="border rounded-pill p-3 text-white" href="tel:+ 996 706 199 144">+ 996 770 199 144</a>
+                    <a class="border rounded-pill p-3 text-white" href="tel:+996770199144">+ 996 770 199 144</a>
 
                 </div>
 
