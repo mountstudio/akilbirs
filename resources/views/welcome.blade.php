@@ -95,7 +95,7 @@
             </div>
             <div class="col-15 col-lg-3 d-md-flex d-block align-items-center">
                 <div class="col-15 col-lg-3 text-lg-right text-center  pb-2 px-0">
-                    <img class="img-fluid text-lg-right" src="{{ asset('img/plane.png') }}" alt="">
+                    <img class="img-fluid text-lg-right" src="{{ asset('icons/trip.png') }}" alt="">
                 </div>
                 <div class="col-15 col-lg-10   text-center">
                     <p class="pt-2">Авиадоставка от 3 дней</p>
