@@ -2,20 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\FormRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     /**
      * Show the application dashboard.
      *
@@ -24,5 +16,15 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+
+    public function formRequest(Request $request)
+    {
+        Mail::to('info@akilbirs.kg')
+            ->cc('talgat.baibek@gmail.com')
+            ->cc('tilek.kubanov@gmail.com')
+            ->send(new FormRequest($request->all()));
+
+        return back();
     }
 }

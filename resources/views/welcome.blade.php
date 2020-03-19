@@ -22,30 +22,30 @@
                 </div>
 
             </div>
-            <div class="col-15 col-lg-2 text-center">
-                <div class="dropdown">
-                    <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Выбрать язык
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Русский</a>
-                        <a class="dropdown-item" href="#">Кыргызча</a>
-                        <a class="dropdown-item" href="#">English</a>
-                        <a class="dropdown-item" href="#">Turkish</a>
-                    </div>
-                </div>
-            </div>
+{{--            <div class="col-15 col-lg-2 text-center">--}}
+{{--                <div class="dropdown">--}}
+{{--                    <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"--}}
+{{--                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
+{{--                        Выбрать язык--}}
+{{--                    </a>--}}
+{{--                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">--}}
+{{--                        <a class="dropdown-item" href="#">Русский</a>--}}
+{{--                        <a class="dropdown-item" href="#">Кыргызча</a>--}}
+{{--                        <a class="dropdown-item" href="#">English</a>--}}
+{{--                        <a class="dropdown-item" href="#">Turkish</a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
         <div class="row min-vh-100 align-items-center py-3">
             <div class="col-15 col-lg-15 text-white text-center">
                 <p class="h1 py-4">Грузоперевозки из Китая и Стамбула под ключ</p>
-                <a class="text-white p-3 " style="background: #17679A;border-radius: 15px;" href="">Заказать
+                <a class="text-white p-3 " style="background: #17679A;border-radius: 15px;" href="#form-request">Заказать
                     обратный звонок</a>
                 {{--            </div>--}}
                 {{--            <div class="col-12 col-lg-4 row justify-content-md-end d-inline-block">--}}
                 <ul class="list-inline py-3" style="list-style: none">
-                    <li class="list-inline-item py-4 px-2"><a class="text-white" href=""><i class="fab fa-weixin fa-2x"></i></a></li>
+                    <li class="list-inline-item py-4 px-2"><a class="text-white" href="#wechat"><i class="fab fa-weixin fa-2x"></i></a></li>
                     <li class="list-inline-item py-4 px-2"><a class="text-white" href="https://www.instagram.com/akilbirs.kg/?hl=ru"><i class="fab fa-instagram fa-2x"></i></a></li>
                     <li class="list-inline-item py-4 px-2"><a class="text-white" href="https://t.me/996770199144"><i class="fab fa-telegram fa-2x"></i></a></li>
                     <li class="list-inline-item py-4 px-2"><a class="text-white"
@@ -303,7 +303,7 @@
                     </div>
                 </div>
                 <div class="col-15 col-lg-3 r">
-                    <div class="text-center">
+                    <div class="text-center" id="wechat">
                         <p class="h4 text-white">Wechat:</p>
                         <img class="img-fluid mx-2" src="{{ asset('img/photo_2020-03-19_14-14-26.jpg') }}" alt="" style="width: 150px;height: 150px">
                     </div>
@@ -314,32 +314,34 @@
                         width="100%" height="450" frameborder="0"></iframe>
                 </div>
                 <div class="col-15 col-lg-7 col-md-6 py-5">
-                    <form>
+                    <form id="form-request" method="post" action="{{ route('form.request') }}">
+                        @csrf
                         <div class="row">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Имя">
+                                <input type="text" name="name" class="form-control" placeholder="Имя *" required>
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Телефон">
+                                <input type="text" name="phone" class="form-control" placeholder="Телефон *" required>
                             </div>
                         </div>
                         <div class="form-group pt-3">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
+                            <input type="email" name="email" class="form-control" id="exampleInputEmail1"
                                    aria-describedby="emailHelp" placeholder="E-mail">
                         </div>
                         <div class="form-group pb-4">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
+                            <textarea class="form-control" name="comment" id="exampleFormControlTextarea1" rows="10"
                                       placeholder="Комментарий"></textarea>
                         </div>
+                        <div class="text-center">
+                            <button type="submit" class="text-white p-3 text-center btn" style="background: #063E62;border-radius: 15px;" href="">Заказать
+                                обратный звонок</button>
+                        </div>
                     </form>
-                    <div class="text-center">
-                        <a class="text-white p-3 text-center" style="background: #063E62;border-radius: 15px;" href="">Заказать
-                            обратный звонок</a>
-                    </div>
+
                     {{--                    <a class="text-white p-3 text-center" style="background: #063E62;border-radius: 15px;" href="">Заказать--}}
                     {{--                        обратный звонок</a>--}}
                     <div class="text-center py-4">
-                        <a href=""><img class="px-1" src="{{ asset('icons/wechat.svg') }}" alt=""></a>
+                        <a href="#wechat"><img class="px-1" src="{{ asset('icons/wechat.svg') }}" alt=""></a>
                         <a href="https://www.instagram.com/akilbirs.kg/?hl=ru"><img class="px-1" src="{{ asset('icons/insta.png') }}" alt=""></a>
                         <a href="https://t.me/996770199144"><img class="px-1" src="{{ asset('icons/telegram.png') }}" alt=""></a>
                         <a href="https://api.whatsapp.com/send?phone=996770199144"><img class="px-1" src="{{ asset('icons/whatsapp.png') }}" alt=""></a>
