@@ -86,7 +86,7 @@
             </div>
             <div class="col-15 col-lg-3 d-md-flex d-block align-items-center">
                 <div class="col-15 col-lg-3 text-lg-right text-center  pb-2 px-0">
-                    <img class="img-fluid text-lg-right" src="{{ asset('img/dostavka_do_dveri.png') }}" alt="">
+                    <img class="img-fluid text-lg-right" src="{{ asset('img/dostavka_do_dveri.png') }}" alt="" >
                 </div>
                 <div class="col-15 col-lg-10   text-center">
                     <p class="pt-2">Доставка
@@ -95,7 +95,7 @@
             </div>
             <div class="col-15 col-lg-3 d-md-flex d-block align-items-center">
                 <div class="col-15 col-lg-3 text-lg-right text-center  pb-2 px-0">
-                    <img class="img-fluid text-lg-right" src="{{ asset('icons/trip.png') }}" alt="">
+                    <img class=" text-lg-right" src="{{ asset('icons/trip.png') }}" alt="" style="width: 60px!important;height: 60px!important;">
                 </div>
                 <div class="col-15 col-lg-10   text-center">
                     <p class="pt-2">Авиадоставка от 3 дней</p>
